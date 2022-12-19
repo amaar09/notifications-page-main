@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans';
+}
+:root{
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-grayish-blue-1);
+    width: 100%;
+}
+
+main{
+    /* border: 2px solid red; */
+    width: 50%;
+    height: 100vh;
+    background-color: var(--White);
+    padding: 30px 20px ;
+}
+.topBar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.29em;
+    font-weight: 800;
+    padding: 30px 0px ;
+}
+.topBar span{
+    background-color: var(--Very-dark-blue);
+    color: white;
+    padding: 1px 10px;
+}
+.topBar:last-child {
+    background-color: red;
+}
+.markAsRead{
+    color: gray;
+    font-weight: 100;
+}
+.individual{
+    /* width: 100%; */
+    /* border: 2px solid rgb(0, 8, 255); */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+    margin: 10px 0px;
+    background-color: var(--Very-light-grayish-blue);
+    line-height: 1.4em;
+}
+.individual img{
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+}
+.individual div{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 30px;
+}
+.individual p strong:hover{
+    color: blue;
+    cursor: pointer;
+}   
+.individual p {
+    word-spacing: 2px;
+}
+.individual p em{
+    color: var( --Dark-grayish-blue);
+    font-weight: 800;
+    font-style: normal;
+}
+.individual p em:hover{
+    color: blue;
+    cursor: pointer;
+}
+.message{
+    border: 2px solid rgb(178, 175, 175);
+    border-radius: 10px;
+    padding: 5px;
+}
+.individual small{
+    color: blue;
+    font-weight: 800;
+}
+.red{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    display: inline-block;
+}
+@media (max-width: 900px) {
+    main{
+        width: 100%;
+    }
+}
