@@ -31,16 +31,18 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
-    background-color: var(--Light-grayish-blue-1);
+    background-color: var(--Very-light-grayish-blue);
     width: 100%;
+    height: 100vh;
 }
 
 main{
     /* border: 2px solid red; */
     width: 50%;
-    height: 100vh;
+    height: 90vh;
     background-color: var(--White);
     padding: 30px 20px ;
+    border-radius: 10px;
 }
 .topBar{
     display: flex;
@@ -54,6 +56,7 @@ main{
     background-color: var(--Very-dark-blue);
     color: white;
     padding: 1px 10px;
+    border-radius: 5px;
 }
 .topBar:last-child {
     background-color: red;
@@ -72,6 +75,7 @@ main{
     margin: 10px 0px;
     background-color: var(--Very-light-grayish-blue);
     line-height: 1.4em;
+    position: relative;
 }
 .individual img{
     width: 40px;
@@ -100,7 +104,7 @@ main{
     cursor: pointer;
 }
 .message{
-    border: 2px solid rgb(178, 175, 175);
+    border: 2px solid var(--Light-grayish-blue-1);
     border-radius: 10px;
     padding: 5px;
 }
@@ -119,8 +123,15 @@ main{
     border-radius: 50%;
     display: inline-block;
 }
-@media (max-width: 900px) {
+.towardsRight{
+   
+}
+@media (max-width: 780px) {
     main{
         width: 100%;
+        height: 100%;
+    }
+    .container{
+        /* height: 100%; */
     }
 }
