@@ -104,6 +104,10 @@ main{
     border-radius: 10px;
     padding: 5px;
 }
+.message:hover{
+    background-color: var(--Light-grayish-blue-1);
+    cursor: pointer;
+}
 .individual small{
     color: blue;
     font-weight: 800;
